@@ -1,0 +1,1035 @@
+mini movie module error
+ General
+@marlon_123881965, Just try hunger_games = Movie("The Hunger Games", ....... Since you have already imported media the class Movie was already imported you don’t need to add a qualifier in front of it. Try it out and let me know if it works.
+8 hours
+Whats the advantage of having soft clustering?
+ Clustering
+@sudip.post Yes, that is a good point and which is why you should judge if soft clustering or hard clustering makes sense. For example, if I am clustering a large dataset of animals then I would rather cluster all dogs in the dogs cluster and other animals in each of their own clusters. But if the…
+23 hours
+Quiz Even or Odd
+ General
+what if var number = 6; var test = 4; What would the output of your program be? What should the output of your rpgoram be?
+1 day
+Question: Implementation PCA
+ Project: Creating Customer Segments
+?? The print should not make it start working. Did you need to re-run that cell so that good_data was defined?
+1 day
+Question: Implementation PCA
+ Project: Creating Customer Segments
+Well, you should check if good_data is defined AFTER that command. Do print good_data.head() then check if it is defined just before the PCA print good_data.head() This will tell you where good_data is being “lost”.
+1 day
+Question: Implementation PCA
+ Project: Creating Customer Segments
+The good_data is already defined for you previously [56 PM]
+1 day
+Question: Implementation PCA
+ Project: Creating Customer Segments
+The error is self-explanatory. good_data is not defined. Have you defined it? Do you need to re-run the notebook?
+1 day
+epoch vs. iteration vs. mini-batch GD
+ Machine Learning to Deep Learning
+Ok, taking your example: So we use batch gradient descent because we are not able use the entire dataset in one batch because our machine would run out of memory. But the idea remains the same: we want the model to see each record once and train on it. So we create N/5 different batches and use eac…
+1 day
+Project changed
+ Project: Build a Dog Breed Classifier
+This is probably because you did not install pip through conda See this or this But I think what Fernando is saying is that you don’t have to have conda find the package. It’s there. Just proceed with the project. It most likely will work.
+1 day
+Help to select a suitable capstone
+ Project: Capstone Proposal
+Just go through the first part of this conversation it may give you an idea. Ultimately you should do it in a field that you enjoy or are passionate about. Cricket? Then try to find dataset about it online that you could use for your capstone.
+1 day
+KFold cross validation and Gridsearch CV
+ MLND: Model Evaluation and Validation
+I just wanted to add here that we DO NOT HAVE to use KFold as part of the GridSearchCV. There is a CV generator in GridSearchCV itself. For example, if you look @ the command here the CV term can be included as an int which means GridSearchCV itself will create the folds for you. You can potentiall…
+1 day
+Epochs, batch_size
+ MLND: Deep Learning
+@mahaviredx, Here is my response. I withdrew it earlier because you had posted your query specifically to Shaun. f I got it right, there would be a total of 100 weight corrections.(10 for each epoch. I think that depends on the model you are using. The weights are a property of the model and ha…
+1 day
+KFold cross validation and Gridsearch CV
+ MLND: Model Evaluation and Validation
+Here is an explanation not from a mentor though. Let me know if it helped.
+1 day
+Bug report: Machine Learning Engineer Nanodegree Program
+Machine Learning
+@Emilily, This is alredy pinged to Udacity. Let me remind them. Thanks for bringing it to our attention.
+1 day
+Capstone Proposal
+ Project: Capstone Proposal
+Yes. I think that’s a great project. Since it is already over and (the solution probably has already been released) the honor code applies and you have to do most of the work and the coding yourself, looking @ the completed kernels only to get ideas or if you get stuck. Of course no guarantee and …
+1 day
+One-hot encoding question
+ Deep Neural Networks
+So, many algorithms in sklearn cannot work on string data. You have to convert them to numerical If you converted (duck, beaver, and walrus) to (0, 1, 2) it means on some attribute that you can make up in your mind duck < beaver < walrus This is a false dependence. That’s what the instructor was…
+2 days
+Project changed
+ Project: Build a Dog Breed Classifier
+Try it through conda again?
+2 days
+Project changed
+ Project: Build a Dog Breed Classifier
+Yes. The .yml file seems to assume that you are in Python 3.5 ENV. Try switching to Python 3.5 ENV and trying it out.
+2 days
+Project changed
+ Project: Build a Dog Breed Classifier
+Do this: pip install appnope
+2 days
+Error Calling feature_importances_
+ Project: Finding Donors for CharityML
+closed 2 days ago
+2 days
+Project changed
+ Project: Build a Dog Breed Classifier
+Just do this: git clone https://github.com/udacity/machine-learning The repository will bring in everything and then you can navigate to the relevant subdirectory.
+2 days
+Selecting a Capstone Topic
+ MLND: Capstone
+@Stephen_Chu, I suggest you send a mail to review-support@udacity.com referencing your review and asking them to have the reviewer clarify your doubts. I think anything we give as feedback here would be speculation unlesss the reviewer themselves come and answer your questions here. Or you can incl…
+2 days
+epoch vs. iteration vs. mini-batch GD
+ Machine Learning to Deep Learning
+If there are ‘N’ records in the data set and let’s say we train our model in batches of ‘n’ records then epochs: One pass till each of the N records is used to train the model Iterations = N/n => here we assume each record is picked only once. or if we assume random training, Iterations = some n…
+2 days
+Safety A+ and Reliability F - help please
+ Project: Train a Smartcab to Drive
+@parhelia So, now we know why your reliability is bad. Becuase the Q-values are wrong. But I can’t understand why the Q-values are so wrong for reliability and so good for accuracy. Did you enforce deadline?
+2 days
+Question5 :Interpretation for the principal component dimensions and the weights
+ Project: Creating Customer Segments
+@sudip.post, Yes, you are correct. Any bar whether in the positive or the negative direction that is the longest will have the maximum influence over that principal component.
+2 days
+Anyone completed Image Classification proj with Python 2.7?
+ Project: Build a Dog Breed Classifier
+@moizkap, You have to choose the python version you want to install when you download anaconda. See here [03 AM]
+2 days
+Safety A+ and Reliability F - help please
+ Project: Train a Smartcab to Drive
+Thats’s fine. Now look @ your Q-tables and for all the states when you have a green light can you check if the action with the highest Q-value is the action that is listed in the waypoint (this will be true for most cases, except a handful.)
+2 days
+Very dumb question regarding unzipping folder and placing in repo
+ Project: Build a Dog Breed Classifier
+@Elvin_Rey for point #2: Place them in the directory called dogImages for point #3: Place them in the directory called lfw for point #4: Place them in the directory called bottleneck_features Once you unzip, whatever folder you get is what you should move.
+2 days
+Safety A+ and Reliability F - help please
+ Project: Train a Smartcab to Drive
+@parhelia, A reliability of F is an indication that the agent does not reach the destination. This may be because the agent is not following the waypoints. You printed out some Q-values. But you did not tell us how you defined the states. Can you check if the action corresponding to the waypoint g…
+3 days
+Optional Question 9: Future rewards
+ Project: Train a Smartcab to Drive
+Well you are doing it because: You have a good idea of how much rewards you will get (i.e pay at a new job) You have a good idea of when you will get it (within next year or two years or whatever) And you probably can guess how many years/how long you will get it (career) but let’s just wrap all …
+3 days
+Optional Question 9: Future rewards
+ Project: Train a Smartcab to Drive
+@kiyo921, You are currently working on this project and working very hard.Why? Instead, you could be out and about partying with your friends and having fun. But you are not. Why not? (Let’s assume that you are not doing this ND to have fun.) So why is it that you have chosen to do this ND and no…
+3 days
+Dog project as capstone
+ Project: Capstone Proposal
+@npuri1903, I very much doubt the dog classifier project would be allowed as a capstone. The reason being the amount of help you would get for that project on these forums based on inputs from others who have already completed it before you would put you at an advantage over others that are attempt…
+3 days
+Q-values are all the same frowning
+ Project: Train a Smartcab to Drive
+closed 3 days ago
+3 days
+Question3: n_test
+ Project: Train a Smartcab to Drive
+No. It’s fine. The instructions do tell you to set it to 10, quite explicitly.
+3 days
+Q-values are all the same frowning
+ Project: Train a Smartcab to Drive
+That’s really weird. After how many trials does this happen? What are your intiali values for [state][action] pairs?
+3 days
+Stuck at safety as F and Reliablity A+
+ MLND: Reinforcement Learning
+Hmmm. You can take a look @ the environment.py and how the rewards are handed out to see if the situation you are curious about would happen. However, your query is somewhat “cheating”. Since this is RL we should not be asking such minutiae that rely on knowledge of the traffic rules. And even my …
+3 days
+Stuck at safety as F and Reliablity A+
+ MLND: Reinforcement Learning
+Nope. If the traffic on right is going forward or turning left you will have a red light. So you are correct the traffic on right does not matter.
+3 days
+Smartcab exercise - Ques 3
+ MLND: Reinforcement Learning
+Few things you could do. You could add a print statement in the simulator.py and print out all the violations you encounter in the run. You could just read the numbers of the graphs and quote it in terms of relative frequency Or you can look in the logs directory and see if you can make sense of t…
+3 days
+what's the relation between Deep Learning Foundation, Machine Learning Engineer, and AI?
+ General
+Well, they add knowledge on top of each other in that order.
+3 days
+In my graph of the customer visualization, can someone help clarify this graph?
+ Project: Creating Customer Segments
+@vee_2472585368904319, @georgeliu1998 is exactly right. There are two clusters because you (probably) chose 2 clusters after generating the silhouette scores. Because you get optimum scores for the value of 2 for # of clusters. Also even though you are using a GMM model it does not mean that the p…
+3 days
+what's the relation between Deep Learning Foundation, Machine Learning Engineer, and AI?
+ General
+If you are interested in working in the field of ML and you have o background then you should take them in the following order ML -> DLF -> AI That said I was looking for an FAQ for you and there is an answer that exactly answers your questions here: https://www.udacity.com/ai/faq Let me know if …
+3 days
+[RESOLVED] get_feature_names(), spam filtering
+ MLND: Code Debugging
+closed 3 days ago
+3 days
+Project changed
+ Project: Build a Dog Breed Classifier
+@georgeliu1998, @orient_beach When you go to the Dog Classifier project It’s says Aug18th was the last date to submit the old project. You can send a mail to machine-support@udacity.com to ask if they will make exception in your case.
+3 days
+Smartcab exercise - Ques 3
+ MLND: Reinforcement Learning
+Yes. You are correct. The learning is turned on in Q6.
+3 days
+Smartcab exercise - Ques 3
+ MLND: Reinforcement Learning
+@ranjit.tilekar, Very easy solution :smile: Just look in the simulator.py and find the conditions where the simulation goes from training to testing. Then check if your script/run is meeting those conditions. If it is meeting and still your script keep running then let me know and we will look at it. If…
+3 days
+Is there a reason that the reward has a random portion in it?
+ Project: Train a Smartcab to Drive
+@erik.i.sundelldbt6, I get your point of view and what you are trying to say, but I don’t follow your supporting evidence. Yes, you are right. In this case, it would take much longer for the agent to train if you kept the rewards the same. And that’s comparing apples to oranges. But if you scale …
+4 days
+Cannot optimize agent, where am I going wrong?
+ MLND: Reinforcement Learning
+I don’t understand what you are doing here: if self.learning == True: if self.epsilon > random.uniform(0, 1): action = random.choice(self.valid_actions) else: action = self.valid_actions[0] Can you please elaborate?
+4 days
+AI, VR developer, Robotics or Full Stack
+ General
+I think you should keep building skills in the field that you want to eventually work in. If ML/AI is the field that you are interested in working full-time then that is the field you should choose. So AI or Robotics will keep you close to the field of your choice since each is somewhat related to M…
+Aug 19
+Resource paper for Feature Transformation does not exist
+ MLND: Unsupervised Learning
+@kotopsinka, It seems to be working now. Try again.
+Aug 19
+Stuck at safety as F and Reliablity A+
+ MLND: Reinforcement Learning
+Yes. You have one parameter that is redundant i.e it does not add any value and is just increasing your state space. Can you reason which one it is?
+Aug 19
+Stuck at safety as F and Reliablity A+
+ MLND: Reinforcement Learning
+Yes. But how many unique states did the people doing only 100 trials have? That is what I am pointing out to you.
+Aug 19
+Stuck at safety as F and Reliablity A+
+ MLND: Reinforcement Learning
+Ok. Cool. So this is important. You should search on the forums how many training trials did people need when they had that many states. So I hope you realize that the # of training trials required (and hence the final results) depend on the number of unique states you have.
+Aug 19
+Stuck at safety as F and Reliablity A+
+ MLND: Reinforcement Learning
+OK. Got it. Can you list how many unique states in total would you have with your state definition?
+Aug 19
+Question 6: Does training trials make sense given the epsilon-tolerance?
+ Project: Train a Smartcab to Drive
+I think this is just a “trick” asking you the same thing two different ways. Approximately how many training trials did the driving agent require before testing? Just read the chart to find how many training trials did the agent get before it started the testing phase. As you found out earlier, th…
+Aug 19
+Stuck at safety as F and Reliablity A+
+ MLND: Reinforcement Learning
+@namratha2403lk6gd, The graphs are moving in the correct direction. Just increase the number of trials and you may get better results. Also can you hare the what is your state definition?
+Aug 19
+Resource paper for Feature Transformation does not exist
+ MLND: Unsupervised Learning
+@kotopsinka, Can you provide me with the link to the lesson? I will have Udacity update the link to the document there.
+Aug 18
+ReLU function - linearity
+ Convolution Neural Networks
+Haha. You have asked many questions in just one question. First, why do we need nonlinearity? I (other mentors) have answered this question before. Can you please look back in the history. If you can’t find it let me know and I will look for it. So assuming that we need non-linearity: Now, how do…
+Aug 18
+Quiz: The World-2, should it be 0.8^4 or 0.8^2 + 0.9^3?
+ MLND: Reinforcement Learning
+Nope. You had a valid doubt. And it’s easy to miss these details. I have to see the videos many times before I can latch onto a lot of these details myself. Questions like these help me (and probably other mentors) fill in the blanks/gaps in their knowledge as well. So don’t worry about it!
+Aug 18
+Quiz: The World-2, should it be 0.8^4 or 0.8^2 + 0.9^3?
+ MLND: Reinforcement Learning
+Ah I see. Ok. The 0.8 is the chance to move in the direction of your choice. And then there are 0.1 and 0.1 chances that you will go in the direction perpendicular to where you are going. So if you are in the top left corner and want to move right then: 0.8 move right and end up right 0.1 move …
+Aug 18
+Quiz: The World-2, should it be 0.8^4 or 0.8^2 + 0.9^3?
+ MLND: Reinforcement Learning
+Ok fine. Now please answer the following questions, even they seem dumb. I am just trying to make sure we are on the same page and not talking two different things. Can you explain to me where is the 0.1 coming from? So after up, up you are in the left, top corner and you take a right with 0.8. No…
+Aug 18
+Quiz: The World-2, should it be 0.8^4 or 0.8^2 + 0.9^3?
+ MLND: Reinforcement Learning
+If you were trying to calculate the probability that you would move out of the cell then you would add 0.8 and 0.1 If you were trying to calculate the probability that you would move to the cell that is above you when you are trying to move up, it would b 0.8 If you were trying to calculate the pr…
+Aug 18
+Capstone too challenging
+ Project: Capstone Proposal
+No. There is no way to resubmit. I think the approved method is to have a 1:1 with the reviewer? There was someone else who had a similar issue. Let me find out. See this thread
+Aug 18
+Quiz: The World-2, should it be 0.8^4 or 0.8^2 + 0.9^3?
+ MLND: Reinforcement Learning
+Does this thread help answer your question?
+Aug 18
+Unhashable type dict
+ Project: Train a Smartcab to Drive
+@namratha2403lk6gd, The property is not of the state whether it is hashable or not. The property is of the keys of a dictionary in Python and what are allowed to be keyed. So there is no restriction how you define a state. And in particular if you came up with a scheme other using a dictionary you…
+Aug 17
+Selecting a Capstone Topic
+ MLND: Capstone
+There is nothing stopping you from using both the benchmarks. You can track your progress based on both of them. I think any benchmark that you can justify and defend should be good enough for the reviewer. If it’s not good enough the onus should be on them to elaborate why they cannot accept the be…
+Aug 17
+ref. kernel dies
+ Project: Build a Dog Breed Classifier
+I have not done it through Keras yet, but I think that is a good lesson for Udacity to add to this section. Want to add a suggestion to UDacity for this? A quick google search will return you many hits on how to save the model. Here is an interesting one and in particular, Keras documentation also…
+Aug 17
+Customer segments - Feature relevance
+ Project: Creating Customer Segments
+So your issue is right here: regressor = DecisionTreeClassifier(random_state = 73)
+Aug 17
+Customer segments - Feature relevance
+ Project: Creating Customer Segments
+@frank_2065429827, Is this part of the notebook that you are working on? [42 PM]
+Aug 17
+Selecting a Capstone Topic
+ MLND: Capstone
+@Stephen_Chu You can contact the person running the competition here and ask him what the benchmark means. It’s possible they will update the benchmark later, but currently, if you get a score of more than 0 then you are beating the benchmark. I am assuming a score of greater than 0 means your mode…
+Aug 17
+epoch vs. iteration vs. mini-batch GD
+ Machine Learning to Deep Learning
+You are correct. Epoch: One pass through the entire dataset once. So the model will see each record once in each epoch. Iteration: There is no standard definition for this and so it could be whatever the person using that notebook has come up with. So you could either think of iteration as : The…
+Aug 17
+ReLU function - linearity
+ Convolution Neural Networks
+Becuase the function is not linear. It is linear for x > 0 and linear for x < 0 but there is a nonlinearity @ x = 0. Just google RELU and look @ an image and you will see it.
+Aug 17
+Log Reg Algorithm Typo?
+ Machine Learning to Deep Learning
+Yes. Remember the len(y) is a constant. YOu know it upfront. And usually, it is the number of records that will be in the mini-batch to train. So let’s say it is 128 i.e you are using 128 records to train at a time and then update the weights. So: Wnew = Wold - (learning rate * dE/dW) <<<<< lets s…
+Aug 17
+Log Reg Algorithm Typo?
+ Machine Learning to Deep Learning
+@antnh6, I don’t see any len(y) term being used to divide in that video. But I understand what you are asking. That is just a normalization term. If we don’t use it the weight updates willl be larger and if use it the weights updates will be smaller. So it’s no big deal whether you use it or not.
+Aug 17
+Selecting a Capstone Topic
+ MLND: Capstone
+If you can do the Kaggle competition that would be awesome, however not sure if that would too complicated. If you already have a good algorithm for it, go for it. I have done the smartphone user activity based on sensor readings as part of a Coursera course (though on a much smaller) scale. So you…
+Aug 17
+Question 10: Implementation of A/B test
+ Project: Creating Customer Segments
+@kiyo921, I think the feedback you are having a problem with refers to this question specifically: Question 11 Assume the wholesale distributor wanted to predict a new feature for each customer based on the purchasing information available. How could the wholesale distributor use the structure of …
+Aug 17
+ValueError in choose_action method
+ Project: Train a Smartcab to Drive
+@kiyo921, Even though the agent may take the wrong action the first time let’s say it goes right when it is supposed to go left, it will get a small negative reward and then it will not choose the right action if the Q-table is updated correctly. This is what I meant by I think if you explored en…
+Aug 16
+ValueError in choose_action method
+ Project: Train a Smartcab to Drive
+@kiyo921, When there is no clear max, i.e all the 4 values are the same the value of 0.0, then action = max(self.Q[state]) probably always chooses right (maybe because ‘r’ has the highest ASCII value.) and that is why you always go right. This is my strong hunch and it is somewhat validated by th…
+Aug 16
+ValueError in choose_action method
+ Project: Train a Smartcab to Drive
+@kiyo921, I would need more information. Can you show me a state where the waypoint is NOT right i.e the planner is asking the agent to go some other way and the agent still makes a right turn? Also when you initialise your Q-table for actions, initialize them like this: None: 0.04, forward: 0.03…
+Aug 16
+Pygame training trials take a long time
+ Project: Train a Smartcab to Drive
+The driving agent learns due to this: action = random.choice(self.valid_actions) and makes a good choice based on what it has learned previously due to this: action = max(self.Q[state]) Of course, I am simplifying it a bit, but that is the gist of it.
+Aug 16
+Pygame training trials take a long time
+ Project: Train a Smartcab to Drive
+Ok. Great. So we fixed one issue. Which is that the experiment was not ending. Now we need to fix the other issue that your agent is not learning. There can be many reasons for it. So you should take a look @ your code again and see if you are making good choices. IN particular pay attention to th…
+Aug 16
+Pygame training trials take a long time
+ Project: Train a Smartcab to Drive
+Nope. The n_test is different than the 20 that is in the equation. The 20 is for the training trials. The n_test has nothing to do with when the simulator enters the testing phase. Once it enters the testing phase it runs a n_test number of trials. So then the thing that was tripping you program u…
+Aug 16
+Pygame training trials take a long time
+ Project: Train a Smartcab to Drive
+Yup. Correct. So the number of trails needs to be more than 20 and the Epsilon needs to be lower than tolerance. So can you check if both those conditions occur for your projgram?
+Aug 16
+Pygame training trials take a long time
+ Project: Train a Smartcab to Drive
+@kiyo921, When learning there are two conditions that need to be met before entering the testing phase. Can you paste the relevant code from the simulator.py here? You will see the two conditins right away!
+Aug 16
+Pygame training trials take a long time
+ Project: Train a Smartcab to Drive
+NO. That’s not it. When your self.learning == True and your program takes a long time then its something else. I could tell you what it is but I think you can figure it out yourself. Look in the simulator.py and find out under what conditions the script switches from training to testing. Please po…
+Aug 16
+Question 10: Implementation of A/B test
+ Project: Creating Customer Segments
+@kiyo921, You don’t need to write any code for the A/B test. You just need to setup a test that is meaningful so that you can isolate whatever you are trying to test to see if it that change is really meaningful. For example, if you were testing the location of a button on a webpage and wondering w…
+Aug 16
+Pygame training trials take a long time
+ Project: Train a Smartcab to Drive
+@kiyo92, Is it taking too long to train or is each training trial taking too long? Those are two different things and may be a result of different issues.
+Aug 15
+Is this enough as a capstone project?
+ Project: Capstone Proposal
+I think it sounds like a great way to deepen your knowledge about RL and Neural networks at the same time. Will you be writing the rewards function (i.e the environment) yourself? How much scaffolding is already provided for you to attempt the problem? i.e how much of it is your own work and how …
+Aug 15
+Graduation Requirements: Deep Learning Project
+ Project: Build a Dog Breed Classifier
+@zhao_135379470304945, If you have completed all the graduation requirements you will not have to pay another month’s subscription. Just send a mail to graduation-support@uacity.com and payment-support@udacity.com and tell them you have completed all the projects and are ready for graduation. Tell …
+Aug 15
+Graduation Requirements: Deep Learning Project
+ Project: Build a Dog Breed Classifier
+@zhao_135379470304945, Congratulations. What was the issue with your RL project? Why was it not working and what did you do to get it start working? Please give it a few more days. They are swamped. If it is urgent then let me know and I will ping someone. Else just wait. They eventually respond t…
+Aug 15
+MLND: deadlines are messed up, projects gone missing
+ General
+@igor_261155192121970, MLND is a self-paced course. You can take as much time as you want to finish MLND. The deadlines are meant for you so that you don’t end up giving too much money to Udacity. But they would be happy to take it. :slight_smile: Anyway, don’t worry about the deadlines. There was a slight glit…
+Aug 15
+Project disappeared from Reinforcement learning curriculum?
+ Project: Train a Smartcab to Drive
+@JonHar, @banksy I am told it should be fixed now. Please check and post here if you still have issues.
+Aug 15
+Project disappeared from Reinforcement learning curriculum?
+ Project: Train a Smartcab to Drive
+Hmm. MIne too. But I don’t need to submit it :slight_smile: I will ping Udacity and find out what’s going on.
+Aug 14
+'ModuleNotFound' in IPython with anaconda 4.4.0 installation
+ Software and Tools
+@moizkap, What sytem are you on? Windows or mac?
+Aug 13
+Selecting a Capstone Topic
+ MLND: Capstone
+You can take a look @ the UCI repository for ML here and see if that gives you an idea for a project. I had gotten the idea for my project just going through these datasets. List anything that you are interested in or passionate about: sports, politics, finance, cooking then think about if you alwa…
+Aug 13
+Graduation Requirements: Deep Learning Project
+ Project: Build a Dog Breed Classifier
+@sumanthnandamuri9, I think you can only submit one. You can, of course, do the second one for practice. You may not be able to submit it. You are running out of time to submit the old one though (only a few days.)
+Aug 13
+What Python Version
+Intro to Computer Science
+Looks at the print statements that he uses. That is a dead giveaway between Python3/Python2. I will let you research what are the differences for the print statements. You can come back and post here if you want confirmation.
+Aug 13
+SVM number of nearby points to consider
+ MLND: Supervised Learning
+The number of points that determine the margin are called support and you need only two such points to have support at the margin that is required of the SVM. However, if you find two boundary conditions that meet the margin requirements but have a different number of support points, the boundary c…
+Aug 13
+Deep learning new content
+ MLND: Deep Learning
+Please take a look at this post
+Aug 13
+Missing Legend in the plot of Question 2 - Model Application.
+ Project: Finding Donors for CharityML
+So there is something systematic that is causing the issue. Probably something in the ENV (i.e not specific to this project.) Perhaps you should just update the versions of the packages. Very easy to do inf you installed them through conda.
+Aug 13
+What is the answer to this question?
+Intro to Statistics
+100,000 is one standard deviation away. What is the cumulative probability at one standard deviation in a one sided table? Multipley that by the number of houses in the distribution.
+Aug 13
+why do i get a 4 when i run this on Shell
+Intro to Computer Science
+@omifaredammy, @mktoni I have indented the code for you. Now in the screenshot, you have posted can you tell me what is the difference between the forst and seocnd pices of code?
+Aug 13
+I really didn't get the solution to this problem
+Intro to Machine Learning
+what part did you not get and we can help you with it. Suerpvised learning = you are giving labels i.e previous photos, music preferences
+Aug 13
+KeyError in 'Finding POIs in the Enron Data'
+Intro to Machine Learning
+Just find length of the list you created.
+Aug 13
+Gradient Descent New vs. Old
+ Deep Neural Networks
+@csoehnel, The formulas are the same. In the new one, you are deriving it for a logistic regression, whereas in the old one you are using an MSE for the error function. So if you derived it for MSE in the new one, you would get the same result as the old one. In fact, why don’t you try it? The hard…
+Aug 12
+Justifying selections, referencing strengths/weaknesses
+ Project: Building a Student Intervention System
+@steve_19398939551006, Just check with machine-support@udacity.com in case you would be upset if your project was not accepted. Better to play it safe! If you don’t mind doing two projects if asked later, then, by all means, continue with this. Now about being able to reject some models on a theo…
+Aug 12
+NameError: name 'LearningAgent' is not defined
+ Project: Train a Smartcab to Drive
+@zhao_135379470304945, I am not sure how to help you debug this without getting the code in hand. But I am trying to avoid asking you to upload the code to GitHub. Usually, most people have issues with the pyGame but your problem seems a little unique. Please look around the forums and see if ther…
+Aug 12
+Justifying selections, referencing strengths/weaknesses
+ Project: Building a Student Intervention System
+@steve_19398939551006, Are you still doing the student intervention project? I thought that project was switched to a different project a few month ago. Do you have permission from Udacity to submit the old project?
+Aug 12
+NameError: name 'LearningAgent' is not defined
+ Project: Train a Smartcab to Drive
+So it looks like it is defined. It is a class that should be read before it comes to execute this line agent = env.create_agent(LearningAgent, learning = True, alpha = 0.01) I am not really sure why you are getting this error.
+Aug 12
+NameError: name 'LearningAgent' is not defined
+ Project: Train a Smartcab to Drive
+No. I meant the second smartcab directory, where the agent.py is.
+Aug 12
+NameError: name 'LearningAgent' is not defined
+ Project: Train a Smartcab to Drive
+Can you run this grep LearningAgent * in your smartcab/smartcab directory? Can you post what you get?
+Aug 12
+NameError: name 'LearningAgent' is not defined
+ Project: Train a Smartcab to Drive
+Did you get your Environment.py issue resolved? Can you check if you have the latest version?
+Aug 12
+Career projects after graduation
+ General
+@vivilearnstocode2_4i, You can do the career projects post-graduation only if you are NOT a ND+ student. ND+ students need to finish these projects to graduate.
+Aug 12
+Gradient Descent New vs. Old
+ Deep Neural Networks
+@csoehnel, Can you please post the two links that you are looking at? In particular are you sure that the activation functions are the same in both the cases? I.e is it possible that in one it’s sigmoid and the other it’s linear? Because the gradient for linear is 1 and hence can be ignored. Als…
+Aug 12
+Extra curriculum projects
+ General
+@ab1pradhan, Send a mail to payment-support@udacity.com. They are the ones who can help you switch etc.
+Aug 12
+Perceptron update
+ Neural Networks & Kernel Methods
+@mahaviredx, This is might be of help to you: https://classroom.udacity.com/nanodegrees/nd009/parts/99115afc-e849-48cf-a580-cb22eea2ba1b/modules/777db663-2b0d-4040-9ae4-bf8c6ab8f157/lessons/21d39927-8e4f-44ba-8425-d15889ac19e2/concepts/dc837952-c0d8-43fc-921c-f1ffe316c795
+Aug 12
+blind spots of the pioneers of neural networks
+ MLND: Café
+@rezarob, Some of my observations were general as well and not mean specifically about your answer. I did not think you went on a tirade.
+Aug 12
+Apply for job in US
+ Career Resources & Community
+I would imagine not many but I don’t know for sure. I am just stating whats possible. That you can apply for jobs from the US website. I am not suggesting that might be the right thing to do.
+Aug 11
+Conflicting formulas for Q-learning?
+ Reinforcement Learning
+Yes. That is correct. We want the agent to go out and explore and try out new things before it decides what it wants to do for the rest of its life and settle down (converge to Q-values.) So we give it a fixed time and fixed allowance (decaying Epsilon) during which it can explore and vistin states…
+Aug 11
+Slightly Different Numbers
+Linear Algebra Refresher Course
+Did the instructors round BEFORE they did any calculations? That may cause differences. Computers wouldn’t cause these big differences. If there is a difference between computers it will be @ 2^32 or 2^64 level. i.e extremely, extremely (write that 30 times more) tiny
+Aug 11
+Conflicting formulas for Q-learning?
+ Reinforcement Learning
+That is correct. The learning rate is the rate that determines what rate the new information is allowed to influence the old information. Remember RL is mostly stochastic. You hope over time the Q-values will converge and all the noise averages out, but a good way to avoid noise in the first place i…
+Aug 11
+Conflicting formulas for Q-learning?
+ Reinforcement Learning
+There is not a lot of difference. The only difference how much of the new information the algorithm allows to change the old information. One is using momentum update (using a learning rate) and the other is using a simple straightforward update. Which is which do you think?
+Aug 11
+Multi-Output Classification
+ MLND: Code Debugging
+@PAVANSUBHASH, So we are just brainstorming. You should not assume my idea is correct. And you should share your idea in case you have any. So if all of the holds in the second stage occur purely based on the inputs (i.e not on any of the outcomes of the first stage but just the inputs to the proc…
+Aug 11
+combining functions in pyhton
+ General
+Can you explain to me what are you doing here: if player_answer == list_of_answers[answers_index]: return True return False
+Aug 11
+blind spots of the pioneers of neural networks
+ MLND: Café
+Very good @rezarob, Now wonder no one had answered it before. And probably no else will now. You covered a lot of ground there. I think it’s hard to answer a question about blind spots and pitfalls of living scientists. Like, we can be critical of the shortcomings of Einstein or Newton now, but we …
+Aug 11
+Accessing Data Files
+Intro to Data Analysis
+closed Aug 11
+Aug 11
+'ModuleNotFound' in IPython with anaconda 4.4.0 installation
+ Software and Tools
+@moizkap, Nope. My intuition is as good as yours. That something is not installed correctly. I would just google that error message and see what articles come up and try to go one by one. But frankly, you should not have to struggle so much. The installation is not an obstacle course that you hav…
+Aug 11
+Unable to run the script of clustering mini-project.
+ Clustering
+Well, the reason I am asking is that the script is looking for that file using a relative path (i…e from the current directory go up one hierarchy etc . etc.) So from the directory, you are running the script from just follow that relative path and do you see the file? If not (then that is your iss…
+Aug 11
+Apply for job in US
+ Career Resources & Community
+Yes. Sure. You can apply for the jobs in the US on Udacity’s job platfrom. However, Udacity does not provide any type of visa advice or support. So it would be between you and the company you apply to that would need to figure out the immigration issues.
+Aug 11
+Unable to run the script of clustering mini-project.
+ Clustering
+Vivek, @vee_2472585368904319 it’s pretty straightforward. It is not able to find the find the file to load. So lets try to solve it, it should be easy, even if we havw to sruggle to find the right palce for the file. Are you putting the file in the correct location?
+Aug 11
+"Quiz: The World - 2" clarification
+ Reinforcement Learning
+@lp187q Yes. You are correct. If you end up somewhere else. It doesn’t count.
+Aug 11
+Visualize the weights of the CNN
+ MLND: Deep Learning
+The kernel size is only 2. The weights are associated with the filter. The filter size is 2, the input channels I am assuming are 3 and the output channels are 16. So (2,2,3,16) makes sense. Just writing about them is fine. But if you can visualize that would be awesome as well. The project is pr…
+Aug 10
+Lesson 1 Quiz 14
+Intro to Descriptive Statistics
+Can you post a link to the quiz and I will take a look? Please reply with @ my name so I will get the message.
+Aug 10
+having diffculty in excuting code on Smartcab project
+ MLND: Reinforcement Learning
+@zhao_135379470304945 There is a chance you may be correct. There was a bug fix that was going to happen for environment.py and I see that the last update to the file was made a day ago. So it’s possible a buggy version of the file was released or you caught a glitch. Whatever. Can you check if yo…
+Aug 10
+Mentor chat box not working. Help!
+Meta
+OK I will ask mentors in DMND to respond to you.
+Aug 10
+Mentor chat box not working. Help!
+Meta
+Can you logout and log back in nd see if it works better? What ND are you in?
+Aug 10
+Mentor chat box not working. Help!
+Meta
+It looks like it has been resolved. Please see if you can chat. If not then there might be a separate issue.
+Aug 10
+Course Expiry Date ?
+ General
+@pande_prateek, If you graduate from DAND, you will have access to all the videos as well the forums for life. However, if you have not graduated yet and stopped paying then you have basically defaulted. I think there may be a grace period during which they may still let you pay the fees in arrear…
+Aug 10
+Error in Boosting lecture. "The Most Important Parts"
+ Ensemble Learning
+@bhluckmeszw, Do you mind creating an issue for it? You will get the credit for it on GitHub. You can do it here
+Aug 10
+smartcab: discrepancy between description and code turning left on green
+ Project: Train a Smartcab to Drive
+@brian5w2, Yes got it. I just posted a link to the discussion. That should hopefully help to define the correct state space. Please feel free to followup in case you still have questions.
+Aug 10
+smartcab: discrepancy between description and code turning left on green
+ Project: Train a Smartcab to Drive
+Haha, You are right again. And very smart. Please go through this detailed discussion I think you will enjoy it. Please feel free to contribute here or in that thread in case you have something to add.
+Aug 10
+Mentor chat box not working. Help!
+Meta
+No worries. There was an issue earlier. It should get resolved soon. The mentors were not able to chat either :smile:
+Aug 10
+smartcab: discrepancy between description and code turning left on green
+ Project: Train a Smartcab to Drive
+Yes. Good job catching this. Not a lot of people catch that bug. Udacity is made aware of this bug and they are working on fixing it. As of now Please neither Readme or the code should be of any consequence to you. Your job (or your agent’s job) is to take actions, collect rewards and update the Q…
+Aug 10
+Question 1: Feature Relevance: Why do I have only one relevant feature and not two?
+ MLND: Unsupervised Learning
+I am not sure. Can you make sure Grocery was in the list? I.e with all this drop business you never what is getting dropped. Can you print out the columns every time you find the score and then list to make sure all the other columsn are part of the features?
+Aug 10
+'ModuleNotFound' in IPython with anaconda 4.4.0 installation
+ Software and Tools
+@moizkap, What he means isinstead of: conda env create -f requirements/aind-dog-mac.yml try giving the full UNIX path to the .yml file.
+Aug 10
+having diffculty in excuting code on Smartcab project
+ MLND: Reinforcement Learning
+Can you run this in the terminal where you are running the smartcab project python -V what do you see?
+Aug 10
+Which algorithm is affected by feature rescaling?
+ Feature Selection & Transformation
+@mahaviredx, A good way to think about how to solve this problem is when the professors teach you these algorithms do they plot it on an XY plane or not? Althe three algorithms (LR, SVM, KM) are plotted on an X-Y plane, assuming a 2-D example. However, only DT is not shown plotted on an XY plane. …
+Aug 10
+Boston_housing Q4 complexity curve error
+Machine Learning
+closed Aug 10
+Aug 10
+having diffculty in excuting code on Smartcab project
+ MLND: Reinforcement Learning
+It’s really hard to say just based on that error message. Did you edit the Environment.py? I haven’t seen people getting error messages on execution once their project had been setup.
+Aug 10
+having diffculty in excuting code on Smartcab project
+ MLND: Reinforcement Learning
+Smartcab is in Python 2.7. What Python are you using?
+Aug 10
+having diffculty in excuting code on Smartcab project
+ MLND: Reinforcement Learning
+You have to run the code like this: Running the Code In a terminal or command window, navigate to the top-level project directory smartcab/ (that contains the three project directories) and run one of the following commands: python smartcab/agent.py or python -m smartcab.agent
+Aug 10
+Course Expiry Date ?
+ General
+Please explain more. What do you mean by course expiry date and what do mean by paid for 3 months?
+Aug 9
+kernel error when running jupyter
+ Software and Tools
+See if you can get any ideas from this thread Here are a few more resources: first, second
+Aug 9
+kernel error when running jupyter
+ Software and Tools
+@moizkap, I am not sure. We will need to figure it out together. Can you check if this will solve your problem
+Aug 8
+Question 1: Feature Relevance: Why do I have only one relevant feature and not two?
+ MLND: Unsupervised Learning
+Easy to find. See here
+Aug 8
+Question 1: Feature Relevance: Why do I have only one relevant feature and not two?
+ MLND: Unsupervised Learning
+Yes, each of them probably played a large part in explaining the other when they were part of the features, but not the entire part. The other features probably played a role as well. What is the correlation between Grocery and Detergents_paper? i.e what is the numbr?
+Aug 8
+Question 1: Feature Relevance: Why do I have only one relevant feature and not two?
+ MLND: Unsupervised Learning
+The fact that you have a score of 0.69 for grocery means all the other features combined can do a good job of explaining grocery. If this score was 0.95, Grocery would be redundant because it would not carry any more information than what the rest of the features would carry together. So you could i…
+Aug 8
+Data Recovery: How to interpret true centre
+ Project: Creating Customer Segments
+Yes. Just a best guess. As long you have a good common sense explanation for your choice I think you can let your imagination wild about waht the establishment could be. Cruise ship? Airlines? hotels? restaurants? food coop? hospital?
+Aug 8
+Data Recovery: How to interpret true centre
+ Project: Creating Customer Segments
+Nope. The numbers in the two rows are just depicting an average customer in the two clusters. There is no qualitative aspect to it. So the second customer “type” buys a lot more, milk, grocery, and Detergents paper compared to the first type which buys more fresh and and frozen.
+Aug 8
+Data Recovery: How to interpret true centre
+ Project: Creating Customer Segments
+Ok. I meant how did you find the log_centers. I don’t know which clustering algorithm you used but lets you used GMM, then it has an attribute means_ which finds the mean of all the points along each component. So this is just a straightforward mean, there may not be any such customer in reality. …
+Aug 8
+Data Recovery: How to interpret true centre
+ Project: Creating Customer Segments
+@kiyo921, How did you find the center of the cluster i.e what command did you use?
+Aug 8
+#23 Logistic Regression Algorithm
+ MLND: Deep Learning
+Yes. You are correct.
+Aug 8
+SIlhouette Score vs Elbow Valdation
+ Project: Creating Customer Segments
+@kiyo921, No. If you were to rely only on the silhouette score the number of clusters to choose would be 2. @92Sanki also tried out a different method to find out the appropriate number of clusters and got a different answer. Instead of reconciling it right away I asked him to wait til he could get…
+Aug 8
+Belief Networks Quiz
+ MLND: Supervised Learning
+Hmmm. I was thinking it would be either 0.03/0.3 or 0.04/0.4 but we are given that Storm is also true so it would be 0.04/0.4 = 0.1 So what is the issue? 0.1 is the correct answer and the grader accepts it. I don’t understand why you had a problem then.
+Aug 8
+Belief Networks Quiz
+ MLND: Supervised Learning
+I can give you the answer but can you please explain where are you getting your numbers from? Remeber you are trying to calculate (PTh|-L) which means: There is thunder There is no lightning (this should reduce your universe. this is the ground truth you already know)
+Aug 7
+Belief Networks Quiz
+ MLND: Supervised Learning
+@danielle_21046570302, Can you post a link to the quiz and I will take a look.
+Aug 7
+Question 2: Different results with different random state
+ Project: Creating Customer Segments
+I used a random_state=0 and this the result I got: {'Grocery': 0.69924819667537985, 'Frozen': -0.27824914882385121, 'Delicatessen': -11.023627900466764, 'Detergents_Paper': 0.34877745469093757, 'Fresh': -0.33307053360466754, 'Milk': 0.17343800937900888} Which is very similar to your result in the …
+Aug 7
+Question 2: Different results with different random state
+ Project: Creating Customer Segments
+Do you mind sharing what scores were you getting? I went back and looked at my notebook and you are correct, milk and detergents_paper are closish, but there is one feature that stands out with a very high score (or at least for the random seed I used) So can you share the two results you were gett…
+Aug 7
+Error installing necessary packages
+ Project: Build a Dog Breed Classifier
+I just tried it out and it worked for me: Collecting tensorflow==1.0.0 Downloading tensorflow-1.0.0-cp35-cp35m-macosx_10_11_x86_64.whl (39.3MB) 100% |████████████████████████████████| 39.4MB 10kB/s Collecting theano==0.8.2 Downloading Theano-0.8.2.tar.gz (2.9MB) 100% |█████████████████…
+Aug 7
+How do I respond to my Proposal review ?
+ Project: Capstone Proposal
+Yeah. That is a weird question to ask and still pass the capstone proposal. The idea of the proposal should be to give you confidence that you are heading in the correct direction with your capstone and not make you have these doubts whether your capstone may get accepted or not accepted. I think y…
+Aug 7
+what is the initial value of the CNN's filters
+ MLND: Deep Learning
+You can read up about the initialisers here and here
+Aug 7
+Perceptron trick subtraction
+ Deep Neural Networks
+I have put the answers here: For point (4,5) error = |W1(4) + W2(5) +W0 - 0| = W1(4) + W2(5) +W0 - 0 New W1: W1 - learning * Gradient of error. w.r.t W1 = W1 - 0.1 * (4) New W2: W2 - learning * Gradient of error. w.r.t W2 = W2 - 0.1 * (5) For point (1, 1) error = |W1(1) + W2(1) +W0 - 0| = 0…
+Aug 7
+Boston Housing - Q 5 - Graph doesn't show the expected vaues
+ Project: Predicting Boston Housing Prices
+@yanay8cavq Got it. I thought you were asking about the curve for max_depth of 4. I took a look @ my notebook and I see this: [37 PM] Can you show me what are you plotting?
+Aug 7
+Boston Housing - Q 5 - Graph doesn't show the expected vaues
+ Project: Predicting Boston Housing Prices
+Yes. That is correct. If you wanted to make changes to what is plotted. However, there is another thing to worry about to get to plot it correctly. I will give you a hint if/when you run into that issue.
+Aug 7
+Boston Housing - Q 5 - Graph doesn't show the expected vaues
+ Project: Predicting Boston Housing Prices
+@yanay8cavq, You have to select the max_depth that you want to plot the learning curve for. You are just calling a function to do the job for you. Someone else has written this function and you are just using it. In that function, they have made the choice of these max_depth. # Create three di…
+Aug 7
+kernel error when running jupyter
+ Software and Tools
+Here is the information for removing conda env
+Aug 7
+Error in CreateQ function
+ MLND: Reinforcement Learning
+Ok, please remove the code from your GitHub profile now so that the students in the future do not get influenced by the code choices you made. We want them to struggle on their own :slight_smile:
+Aug 7
+Accuracy stays at 0.1%
+ Project: Build a Dog Breed Classifier
+@filg, Did you follow the tips in this post ? In particular, a good weight initialization is the key to getting good results.
+Aug 7
+smartcab - not able to identify the signal
+ MLND: Reinforcement Learning
+The signal does not show up in the console. The U is the destination that the car needs to reach. As you rightly figured out the primary agent is white in color here.
+Aug 6
+ValueError in choose_action method
+ Project: Train a Smartcab to Drive
+@pixarsnewhero, So the action is always being chosen as ‘right’ is probably because the Q-value for the right action is always the largest. Now, this is not a very helpful Q-table entry. The waypoint is right so the action will be right. (‘right’, ‘red’, None, ‘forward’) – None : 0.00 – forward …
+Aug 6
+Error in CreateQ function
+ MLND: Reinforcement Learning
+@omkar.pavtekar724ju You are calling these methods next_state = self.build_state() self.createQ(next_state) in the learn method. Can you tell me what would happen in the Learn function if you Called these methods Did not call these methods Also, your Q-learning equation is wro…
+Aug 6
+Total projects to complete Course
+ General
+What Nanodegree is this? It would be more helpful if you posted your question in the specific ND so that the students or mentors there can help you. This is a general forum so people from all the NDs post here, which may or may not include people form your ND.
+Aug 6
+Randomize function in Detecting Errors section
+ MLND: Model Evaluation and Validation
+Yes. So the other way to put it is: consider X to have rows and columns (2-D) , then in the above code I am filtering the rows, but making no choice on the columns i.e once I have figured if a row should be included or not, I am telling the tool give me all the columns for that row. You can also f…
+Aug 6
+Keras model traininig loss lower than validation loss
+ Data Modeling and Validation
+One Epoch is just the model making a complete pass through the entire dataset to train. The model is being continuously tuned, which is why the loss is changing, similar to a child learning new skills. At first, the child/model makes a lot of mistakes and then it slowly learns and makes fewer mistak…
+Aug 6
+When should I apply for jobs
+ General
+I think interviews themselves are great feedback tools about the gaps in your knowledge and what you should focus on and fortify. So if you go in with the mindset that the first few interviews may not work out and they are all a learning experience to build up your skills then go ahead and give inte…
+Aug 5
+Keras model traininig loss lower than validation loss
+ Data Modeling and Validation
+Yes. that is correct. Once you find the epoch where you should “stop early” you need to re-run/re-train the model until that epoch using the same initialization (for random_state/seed) that you used in the initial run. Using the same initialization ensures that you will get the same train/test split…
+Aug 5
+Error in CreateQ function
+ MLND: Reinforcement Learning
+@omkar.pavtekar724ju It’s really hard to say. Why should something you do in createQ matter in some other function when your print statements show that the state you wanted exists in the Q-table, is recognized by Python as the same as what you are searching but still gives a key error. Something ju…
+Aug 5
+Error in CreateQ function
+ MLND: Reinforcement Learning
+Can you please post your entire code for agent.py or load it to GitHub and post a link. I will have to take a look.
+Aug 5
+Error in CreateQ function
+ MLND: Reinforcement Learning
+Hmm. Ok got it. I thought the print in Python 2.7 was not a function. i.e. you had to do this: print i <— Python 2.7 print(i) <— Python 3 Are you sure you are using python 2.7? Can you do this: >>> import sys >>> print(sys.version) 3.5.2 |Continuum Analytics, Inc.| (default, Jul 2 2016, 17…
+Aug 5
+Error in CreateQ function
+ MLND: Reinforcement Learning
+@omkar.pavtekar724ju, It’s really hard to read your small images. Next time, please paste the output of your code instead of uploading an image. And format it as code (use the </> in the formatting bar) A few questions: Are you using Python 3? This program uses Python 2.7. So did you make chang…
+Aug 5
+Error in CreateQ function
+ MLND: Reinforcement Learning
+Yes. It’s fine. So if you have defined the data structure correctly, the ‘i’ will be a dictionary (actions and q-values.) And assuming you are using Python 2.7 you will get a syntax error here print(i) Before you come to the for loop can you print out what is the value of state?
+Aug 5
+Error in CreateQ function
+ MLND: Reinforcement Learning
+The key error means the state does not exist. It shows up only in the “for loop” because you are accessing it only in the for loop: for i in self.Q[state]: print(i) The key error means a few things: You have not created the key. The code calls createQ as soon as it builds the state.…
+Aug 5
+Kaggle dataset for capstone project
+ MLND: Capstone
+closed Aug 5
+Aug 5
+Kaggle dataset for capstone project
+ MLND: Capstone
+@jeff_262449268037318 You do not have any question posted. Whats on your mind? EDIT: Just saw your other question with the same title that has been answered. I will close this.
+Aug 5
+Error in CreateQ function
+ MLND: Reinforcement Learning
+Yes. Now it is correct. I think you have updated from your orginal post. You don’t need this any more action ={}
+Aug 5
+Error in CreateQ function
+ MLND: Reinforcement Learning
+@omkar.pavtekar724ju If the code in your original post is what you have currently, then you have a typo in createQ. Can you see it? Also, in general, your createQ method is not correct. It is not doing what it is supposed to do.
+Aug 5
+Decision Tree Expressiveness Quiz 2 understanding
+ Decision Trees & Regression
+I think you probably meant to link to this quiz instead: https://classroom.udacity.com/nanodegrees/nd009/parts/daaa0245-f3cf-4b34-a0ba-8939c1079513/modules/a5f431db-f028-43ca-b3ce-3817936e7cb5/lessons/5414400946/concepts/3131755850923 And frankly, that quiz has nothing to do with a tree. The answe…
+Aug 5
+time for the model to train!!
+ Project: Build a Dog Breed Classifier
+Yes. Then this is not too bad. 2 hours is probably about right. Again I am hand waving and answering from my gut based on my experience with the image classification project.
+Aug 4
+How do I respond to my Proposal review ?
+ Project: Capstone Proposal
+Oh. you didn’t say it was accepted. You can answer in the feedback. When you leave the feedback just give them a pointer to where you have answered the questions. But it may also be that the reviewer wanted you to think more about some of those things while you are doing the capstone and the questi…
+Aug 4
+Keras model traininig loss lower than validation loss
+ Data Modeling and Validation
+I think it is a rough idea where you need to stop. There is no exact well measured, nicely defined epoch that is the right answer, you just look at the trend and when the trend changes that is when you stop. If you were to reshuffle the train/test split you may get a different answer/epoch. It’s mo…
+Aug 4
+How do I respond to my Proposal review ?
+ Project: Capstone Proposal
+Just answer them when you resubmit your proposal for approval next time. Just add a separate section and put the question/answers there.
+Aug 4
+Keras model traininig loss lower than validation loss
+ Data Modeling and Validation
+Nope. Until 9 or 10. Both the losses are decreasing till then and then the validation loss more or less plateaus out. What od you think?
+Aug 4
+Keras model traininig loss lower than validation loss
+ Data Modeling and Validation
+@letyrodri1 A few pointers, none of which is a definitive answer for your situation but just something to spark a discussion. It is possible that in machine learning for the training loss to be more than the validation loss. As this post points out. Based on the quirks on the train/test split s…
+Aug 4
+Question 2: Different results with different random state
+ Project: Creating Customer Segments
+Yeah. That’s expected. When you change the random state, you are changing the seed to the random number generator which is used to generate random indices to split the data into training and test set. When you have different training set on which to train the model performs differently. This is exp…
+Aug 4
+Setting a random state for the classifiers
+ Project: Finding Donors for CharityML
+Here is the random_state explained in much more depth by another student who experimented with it. It’s more of conversation in a thread than a post. Here it is
+Aug 4
+time for the model to train!!
+ Project: Build a Dog Breed Classifier
+Yes. I would think so. You are about close to the image classification problem we had previously. Though the number of filters/output depth for that went up to 512/1024 or so in the final CNN layer and it would take me overnight to train it. This is just rough hand waving, but 2 hour does’nt seem …
+Aug 4
+P2-Finding donor for charityML | GridSearchCV | TypeError: object of type 'float' has no len()
+ Project: Finding Donors for CharityML
+@orugantn, If you are giving a list of floats you should provide it directly to LogisticRegressionCV. If you are providing it to the GridSearchCV then it needs to be a list of ints. See here: http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegressionCV.html
+Aug 4
+ValueError in choose_action method
+ Project: Train a Smartcab to Drive
+How have you defined the states? And are you saying that your action is always ‘right’? Under the logs directory, there is a .txt file that lists the Q-values. Can you see what kind of Q-values do you see there?
+Aug 4
+P2-Finding donor for charityML | GridSearchCV | TypeError: object of type 'float' has no len()
+ Project: Finding Donors for CharityML
+@orugantn Do you need to update your code and the error message? Your code is: # TODO: Fit the grid search object to the training data and find the optimal parameters using fit() grid_fit = grid_obj.fit(X_train, y_train) while the error message is 21 # TODO: Fit the grid search object to the t…
+Aug 4
+32. miniproject student admissions - cannot import keras
+ Deep Neural Networks
+Can you just open an interactive Python terminal and see if you are able to run these steps in it? i.e is it a notebook problem or your env problem? Do you have the correct kernel in your jupyter notebook?
+Aug 4
+Deep learning Section problem
+ MLND: Deep Learning
+Take a look at this
+Aug 4
+ValueError in choose_action method
+ Project: Train a Smartcab to Drive
+Yes. Good point. That is an issue. And also you were missing the ‘state’, for example self.Q.values() will return in a list all the dictionaries for all the states you have. I think you probably wanted self.Q[state].values()
+Aug 4
+Model Tuning: 'numpy.float64' object is not callable
+ Project: Finding Donors for CharityML
+@kiyo921, You may have too many grid search parameters. It’s easy to get carried away, but a just a few parameters and a few values for those parameters will blow up the combinations of the values that it needs to search. It is building a model for each of those parameter combinations. So make sure…
+Aug 4
+32. miniproject student admissions - cannot import keras
+ Deep Neural Networks
+Yes should have BTW where are you naming the ENV? It usually takes the ‘-n’ option. Can you just install it anyway? See here
+Aug 4
+ValueError in choose_action method
+ Project: Train a Smartcab to Drive
+Can you please write out the outputs for both the functions? I thought there was an error in the first one and while playing with it I figured you had made things unnecessarily complicated. I can create up a dummy example but it will take a few minutes (since it’s a dictionary of dictionary etc.)
+Aug 4
+Question 11: Display the clustering results based on 'Channel' data
+ Project: Creating Customer Segments
+You want to find whats in the outliers >>> outliers = [1, 2, 3] >>> map(lambda x: type(x), outliers) [<type 'int'>, <type 'int'>, <type 'int'>]
+Aug 4
+Can't verify identity and question about subscription
+ General
+@ahmedelgendy, That email address is the best for the response you need. No one on this forum can authoritatively give you an answer. So please wait for an email. If you are running out of time send another e-mail. Put [URGENT: Need response before Aug/10/17] in the subject and then in the body wri…
+Aug 4
+Question 11: Display the clustering results based on 'Channel' data
+ Project: Creating Customer Segments
+@brett9, I tried a dummy example and it works fine. >>> a a b 0 1 6 1 2 7 2 3 8 3 4 9 >>> outliers = [1, 2] >>> c = a.drop(a.index[outliers]).reset_index(drop = True) >>> c a b 0 1 6 1 4 9 >>> The key is this message: IndexError: arrays used as indices must be of integer (or…
+Aug 4
+Does Oncoming Traffic Really Necessary?
+ MLND: Reinforcement Learning
+Personally, if your code works just with those two state axes, lights and waypoint and works for 1000 trials getting A+, that is a pretty strong statement that those two are the only ones that are important. But, that is an indication that the rewards system in the environment.py is screwed up and …
+Aug 4
+Why is PCA associated with unsupervised learning only?
+ MLND: Unsupervised Learning
+Yes. True. It is not a “learning algorithm” but it is “unsupervised” in the sense it does not need labels to work. This is one of those things where everyone gets a participation trophy because it is subjective and who is to say one person’s interpretation is “more correct” than someone else’s. Th…
+Aug 4
+Better tutorial for finding optimal policy in Markov Decision Processes ?
+ MLND: Reinforcement Learning
+I am not sure if this is what you are looking for, please give this a try.
+Aug 3
+Randomize function in Detecting Errors section
+ MLND: Model Evaluation and Validation
+Yes. Very good indeed. So the permutation just returns a list of numbers upto the range that you have given it. X and Y are related. X is the features DF and Y is the label. So they will have the same number of records. So if you did X.shape and Y.shape and printed them out the first number will b…
+Aug 3
+Does Oncoming Traffic Really Necessary?
+ MLND: Reinforcement Learning
+@wei.robin, You make a really good point. And I am glad you have thought of this in depth. You can also refer to this discussion about the same topic. Now I can’t argue with your results. If you are getting A+ with just waypoints and lights then it seems that those are the only state axes that mat…
+Aug 3
+Randomize function in Detecting Errors section
+ MLND: Model Evaluation and Validation
+Dan, Good question and it is certainly valid. Without directly answering the question I am going to point out a few things that you should check out. What does permutation so? What is the length of X? i.e how many rows What is the length of Y? i.e how many rows Now if you have the answers to the…
+Aug 3
+Why is PCA associated with unsupervised learning only?
+ MLND: Unsupervised Learning
+Can you share the answers you found? PCA is deemed an unsupervised algorithm itself because it can work only one set of vectors and produce a new set of vectors i.e it does not need to be trained. But it can be used in supervised learning. Here are some slides I found after I was googling based on …
+Aug 3
+Why is PCA associated with unsupervised learning only?
+ MLND: Unsupervised Learning
+No! PCA can be useful for supervised learning as well. Why do you say that it can only be used for unsupervised learning?
+Aug 3
+Projects that I have completed before are now incomplete and past due?
+ General
+You should send a mail to payment-support@udacity.com and ask them if that is allowed. I don’t think it is possible for anyone on this board to give you a definitive answer. However, please do come back and update us what they tell you. It could be useful to students in the future.
+Aug 3
+PIP Install Issues
+ General
+This is the first time I am reading that you need to remove the .bash_profile to run pip. You should not need to.I think you may be setting something/doing something to mess up the ENV. The only issues that I have faced with pip have been that it did not have permission to write to a directory and s…
+Aug 3
+ValueError in choose_action method
+ Project: Train a Smartcab to Drive
+Change this from action = self.Q.keys()[self.Q.values().index(max(self.Q[state]))] to action = max(self.Q[state])
+Aug 3
+Projects that I have completed before are now incomplete and past due?
+ General
+I am not sure the projects that are in your ND. But I assume there should be something for resume, cover letter, gitHub, LinkedIn, Interview Practice
+Aug 3
+Projects that I have completed before are now incomplete and past due?
+ General
+All Nanodegreeplus students also need to finish the career projects before they are eligible to graduate.
+Aug 3
+Problems regarding predict proba function
+ MLND: Capstone
+You can look @ this notebook to get idea about how minibatching is done. This is the easiest way to do it. Of course, you have to select a model that can be trained in batches. [05 PM]
+Aug 3
+Initial Model Evaluation: Interpreting my results
+ Project: Finding Donors for CharityML
+NP. Please don’t forget to write an explanation for your choice in the notebook though. I think the idea is you had to go search for and read up about RF online and in literature and it serves the purpose of the notebook (make you learn :slight_smile:
+Aug 3
+Initial Model Evaluation: Interpreting my results
+ Project: Finding Donors for CharityML
+It is very hard to make statements like which model is best based on just one run. You should think of the results as just a sample point in a distribution i.e the results are for that combination of data, for that data set etc. Usually, RandomForest is a much more powerful and versatile algorithm t…
+Aug 3
+Initial Model Evaluation: Interpreting my results
+ Project: Finding Donors for CharityML
+it’s possible. Zero F-score means it misclassified all the points of the class that you were interested in. 1% of the data is really not a lot of data. In other words, you can say that SVC needs more data than other classifiers before it can start performing better.
+Aug 3
+Initial Model Evaluation: Interpreting my results
+ Project: Finding Donors for CharityML
+If there are small changes I wouldn’t be too worried about it. With less data, the same models can overfit and give very good accuracy on the training set. What’s your concern with the F-Score?
+Aug 3
+Visual plot for the smartcab seems wrong.
+ Project: Train a Smartcab to Drive
+Something is not right for sure. However, you are getting into accidents and your reward is consistently negative. You are correct you should be getting ‘F’ on both metrics. Weird!
+Aug 3
+Visual plot for the smartcab seems wrong.
+ Project: Train a Smartcab to Drive
+There are two points I would like you to follow up on since it seems you are curious: You should look into the visuals.py and see how the safety and reliability rating is calculated. But you are correct it is unusual that you do not have any accident. So can you make sure that you actually do have…
+Aug 3
+Analysis on Titanic project
+ General
+>>> a fare name 0 100 joe 1 20 bob 2 1000 sally 3 5 mary 4 25 ann 5 90 rita >>> a.loc[a['fare'] == a['fare'].max()] fare name 2 1000 sally >>> a.loc[a['fare'] == a['fare'].min()] fare name 3 5 mary >>>
+Aug 2
+What is the Aug 18th deadline for Deep Learning Project?
+ MLND: Deep Learning
+Hey, there were some changes in the project and Udacity has also grown a lot suddenly so that people are trying to catch up. It’s just growing pains. They are still just as awesome. Now, can you go to your previous project and does it show that you have passed it? If so just take a screenshot of it…
+Aug 2
+Analysis on Titanic project
+ General
+Just find the column for the “fares paid” and then run a max() and a min() on it
+Aug 2
+using R code in the submission
+ MLND: Code Debugging
+I am not familiar with how R is actually called into the jupyter notebook. That would be a cool to check out. But in any case, it seems that your reviewer would need to download R packages to run your submitted code and you should not expect the reviewer to have to download anything extra than is p…
+Aug 2
+Movie Trailer Project - Syntax Error
+ General
+You have an extra space. Try removing the space before “:”
+Aug 2
+pd.dataframe to pd.series / timeseries problems
+ MLND: Capstone
+@jan.engelke, You can change the index/column to just show the year and then use groupby.
+Aug 2
+Question 1: calculating accuracy and F-score without predictions
+ Project: Finding Donors for CharityML
+Yes. That is correct. Also, you are just asked to calculate accuracy and recall so you don’t even need to create a predicted vector. All you need to know is all the labels are one and you can use that information directly in the forumulas.
+Aug 2
+Lesson 3 Step 3: Single Link Clustering Running Time
+ Clustering
+But how would you just pick points based on distances you got the first time. Once a point enters a cluster even if it is far away from some other point, its distance from that point will be closest distance from any point in that cluster. Here is a concrete example: Let’s say you have 3 points A…
+Aug 2
+Is there a reason that the reward has a random portion in it?
+ Project: Train a Smartcab to Drive
+I don’t think it should matter too much. It just adds or subtracts decimals from the actual reward. I am not sure what the reasoning behind it was or if there is any ML aspect to it (I don’t think there is.) I think the person who wrote the code just wanted the final rewards to look like floats an…
+Aug 2
+Lesson 3 Step 3: Single Link Clustering Running Time
+ Clustering
+OK. Fine. Steps 1, 2, 3 have to be repeated. So every time you add a point to a cluster you need to update the distances (and you could use tricks to optimize the calculations, such as using the distance that you had computed the first time.) then you would need to sort again since you have updated…
+Aug 2
+Lesson 3 Step 3: Single Link Clustering Running Time
+ Clustering
+The step 2 does need to be repeated. However, there are a lot of optimizations within the step so that you do not need to do the entire step 2 every time. For example, once a point is added to a cluster, distances from all points in that cluster to all the other points not in that cluster can be upd…
+Aug 2
+Quick question regarding old DL project
+ MLND: Deep Learning
+No. There is no need to email them. Was your Deep learning project graded and already passed? Here is information for you about the requirements You only need to send a mail when you ready to graduate. @nishant.10vean
+Aug 2
+Why does the area bounded by a decision tree look like that?
+ MLND: Intro and Fundamentals
+Yes. That is correct. The Decision tree cuts the plane in two halves with a decision point. So if the plane shown was an XY plane the decision tree could be: Y > a X < b Y > c X > d and you would pretty soon have the plane cut into squares/rectangles.
+Aug 2
+Why does the area bounded by a decision tree look like that?
+ MLND: Intro and Fundamentals
+@william.richard, Can you please share a link to the quiz so I can take a look and respond. With the recent changes to the curriculum it is always best to include a link to the lesson you are talking about. Some of the stuff is new to most mentors as welll.
+Aug 2
+Lesson 3 Step 3: Single Link Clustering Running Time
+ Clustering
+Your idea is correct. However, you would need to repeat steps 2 and 3 K times. Once you form a cluster the closest distance between all the points may need to be updated because the closest distance from a point A to any other point B will be the closest distance from the cluster that point A belong…
+Aug 1
+preprocessing of test data
+ MLND: Supervised Learning
+If you have a mix of continuous and categorical variables and you are trying to do classification it’s possible that the classification algorithms may fail. For example, I think DecisionTree will fail saying that the number of variables is too large or something. In that case, you may need to break …
+Aug 1
+Problem - one hot encoding for 1000 unique values
+ MLND: Supervised Learning
+LabelEncoder is the best method I can think of that you should use. Archit shared a link in this post but of those, all LabelEncoder does everything that the other methods do. You just have to remember to save the mapping and be able to recover it back when you use the LabelEncoder.
+Aug 1
+error in submitting project
+ General
+Udacity is aware of the issue. Patience :slight_smile:
+Aug 1
+Submit Project Error
+ General
+Udacity is aware of the issue. A fix is coming soon. I am sure some reasonable accommodations will be made for your due date (this is a widely known issue)
+Aug 1
+preprocessing of test data
+ MLND: Supervised Learning
+Yes. The data you use to predict has to match in feature size the data that you used to train the model. Instead of one hot encoding you can use labelencoder to encode the data within the same column.
+Aug 1
+Problem - one hot encoding for 1000 unique values
+ MLND: Supervised Learning
+Why are you doing on-hot-encoding? What is the reason that you need to do one-hot-encoding and some other technique may not work for you?
+Aug 1
+pd.dataframe to pd.series / timeseries problems
+ MLND: Capstone
+It’s probably because the index is of type datetime. Do this: print series.index.dtype and help(pd.datetime) Can you use this to solve your problem?

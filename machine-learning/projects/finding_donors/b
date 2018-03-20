@@ -1,0 +1,163 @@
+ValueError in choose_action method
+ Project: Train a Smartcab to Drive
+Change this from action = self.Q.keys()[self.Q.values().index(max(self.Q[state]))] to action = max(self.Q[state])
+2 hours
+Projects that I have completed before are now incomplete and past due?
+ General
+I am not sure the projects that are in your ND. But I assume there should be something for resume, cover letter, gitHub, LinkedIn, Interview Practice
+2 hours
+Projects that I have completed before are now incomplete and past due?
+ General
+All Nanodegreeplus students also need to finish the career projects before they are eligible to graduate.
+2 hours
+Problems regarding predict proba function
+ MLND: Capstone
+You can look @ this notebook to get idea about how minibatching is done. This is the easiest way to do it. Of course, you have to select a model that can be trained in batches. [05 PM]
+2 hours
+Initial Model Evaluation: Interpreting my results
+ Project: Finding Donors for CharityML
+NP. Please don’t forget to write an explanation for your choice in the notebook though. I think the idea is you had to go search for and read up about RF online and in literature and it serves the purpose of the notebook (make you learn :slight_smile:
+3 hours
+Initial Model Evaluation: Interpreting my results
+ Project: Finding Donors for CharityML
+It is very hard to make statements like which model is best based on just one run. You should think of the results as just a sample point in a distribution i.e the results are for that combination of data, for that data set etc. Usually, RandomForest is a much more powerful and versatile algorithm t…
+6 hours
+Initial Model Evaluation: Interpreting my results
+ Project: Finding Donors for CharityML
+it’s possible. Zero F-score means it misclassified all the points of the class that you were interested in. 1% of the data is really not a lot of data. In other words, you can say that SVC needs more data than other classifiers before it can start performing better.
+6 hours
+Initial Model Evaluation: Interpreting my results
+ Project: Finding Donors for CharityML
+If there are small changes I wouldn’t be too worried about it. With less data, the same models can overfit and give very good accuracy on the training set. What’s your concern with the F-Score?
+7 hours
+Visual plot for the smartcab seems wrong.
+ Project: Train a Smartcab to Drive
+Something is not right for sure. However, you are getting into accidents and your reward is consistently negative. You are correct you should be getting ‘F’ on both metrics. Weird!
+7 hours
+Visual plot for the smartcab seems wrong.
+ Project: Train a Smartcab to Drive
+There are two points I would like you to follow up on since it seems you are curious: You should look into the visuals.py and see how the safety and reliability rating is calculated. But you are correct it is unusual that you do not have any accident. So can you make sure that you actually do have…
+7 hours
+Analysis on Titanic project
+ General
+>>> a fare name 0 100 joe 1 20 bob 2 1000 sally 3 5 mary 4 25 ann 5 90 rita >>> a.loc[a['fare'] == a['fare'].max()] fare name 2 1000 sally >>> a.loc[a['fare'] == a['fare'].min()] fare name 3 5 mary >>>
+14 hours
+What is the Aug 18th deadline for Deep Learning Project?
+ MLND: Deep Learning
+Hey, there were some changes in the project and Udacity has also grown a lot suddenly so that people are trying to catch up. It’s just growing pains. They are still just as awesome. Now, can you go to your previous project and does it show that you have passed it? If so just take a screenshot of it…
+14 hours
+Analysis on Titanic project
+ General
+Just find the column for the “fares paid” and then run a max() and a min() on it
+14 hours
+using R code in the submission
+ MLND: Code Debugging
+I am not familiar with how R is actually called into the jupyter notebook. That would be a cool to check out. But in any case, it seems that your reviewer would need to download R packages to run your submitted code and you should not expect the reviewer to have to download anything extra than is p…
+21 hours
+Movie Trailer Project - Syntax Error
+ General
+You have an extra space. Try removing the space before “:”
+1 day
+pd.dataframe to pd.series / timeseries problems
+ MLND: Capstone
+@jan.engelke, You can change the index/column to just show the year and then use groupby.
+1 day
+Question 1: calculating accuracy and F-score without predictions
+ Project: Finding Donors for CharityML
+Yes. That is correct. Also, you are just asked to calculate accuracy and recall so you don’t even need to create a predicted vector. All you need to know is all the labels are one and you can use that information directly in the forumulas.
+1 day
+Lesson 3 Step 3: Single Link Clustering Running Time
+ Clustering
+But how would you just pick points based on distances you got the first time. Once a point enters a cluster even if it is far away from some other point, its distance from that point will be closest distance from any point in that cluster. Here is a concrete example: Let’s say you have 3 points A…
+1 day
+Is there a reason that the reward has a random portion in it?
+ Project: Train a Smartcab to Drive
+I don’t think it should matter too much. It just adds or subtracts decimals from the actual reward. I am not sure what the reasoning behind it was or if there is any ML aspect to it (I don’t think there is.) I think the person who wrote the code just wanted the final rewards to look like floats an…
+1 day
+Lesson 3 Step 3: Single Link Clustering Running Time
+ Clustering
+OK. Fine. Steps 1, 2, 3 have to be repeated. So every time you add a point to a cluster you need to update the distances (and you could use tricks to optimize the calculations, such as using the distance that you had computed the first time.) then you would need to sort again since you have updated…
+1 day
+Lesson 3 Step 3: Single Link Clustering Running Time
+ Clustering
+The step 2 does need to be repeated. However, there are a lot of optimizations within the step so that you do not need to do the entire step 2 every time. For example, once a point is added to a cluster, distances from all points in that cluster to all the other points not in that cluster can be upd…
+1 day
+Quick question regarding old DL project
+ MLND: Deep Learning
+No. There is no need to email them. Was your Deep learning project graded and already passed? Here is information for you about the requirements You only need to send a mail when you ready to graduate. @nishant.10vean
+1 day
+Why does the area bounded by a decision tree look like that?
+ MLND: Intro and Fundamentals
+Yes. That is correct. The Decision tree cuts the plane in two halves with a decision point. So if the plane shown was an XY plane the decision tree could be: Y > a X < b Y > c X > d and you would pretty soon have the plane cut into squares/rectangles.
+1 day
+Why does the area bounded by a decision tree look like that?
+ MLND: Intro and Fundamentals
+@william.richard, Can you please share a link to the quiz so I can take a look and respond. With the recent changes to the curriculum it is always best to include a link to the lesson you are talking about. Some of the stuff is new to most mentors as welll.
+1 day
+Lesson 3 Step 3: Single Link Clustering Running Time
+ Clustering
+Your idea is correct. However, you would need to repeat steps 2 and 3 K times. Once you form a cluster the closest distance between all the points may need to be updated because the closest distance from a point A to any other point B will be the closest distance from the cluster that point A belong…
+1 day
+preprocessing of test data
+ MLND: Supervised Learning
+If you have a mix of continuous and categorical variables and you are trying to do classification it’s possible that the classification algorithms may fail. For example, I think DecisionTree will fail saying that the number of variables is too large or something. In that case, you may need to break …
+1 day
+Problem - one hot encoding for 1000 unique values
+ MLND: Supervised Learning
+LabelEncoder is the best method I can think of that you should use. Archit shared a link in this post but of those, all LabelEncoder does everything that the other methods do. You just have to remember to save the mapping and be able to recover it back when you use the LabelEncoder.
+2 days
+error in submitting project
+ General
+Udacity is aware of the issue. Patience :slight_smile:
+2 days
+Submit Project Error
+ General
+Udacity is aware of the issue. A fix is coming soon. I am sure some reasonable accommodations will be made for your due date (this is a widely known issue)
+2 days
+preprocessing of test data
+ MLND: Supervised Learning
+Yes. The data you use to predict has to match in feature size the data that you used to train the model. Instead of one hot encoding you can use labelencoder to encode the data within the same column.
+2 days
+Problem - one hot encoding for 1000 unique values
+ MLND: Supervised Learning
+Why are you doing on-hot-encoding? What is the reason that you need to do one-hot-encoding and some other technique may not work for you?
+2 days
+pd.dataframe to pd.series / timeseries problems
+ MLND: Capstone
+It’s probably because the index is of type datetime. Do this: print series.index.dtype and help(pd.datetime) Can you use this to solve your problem?
+2 days
+Index out of bound error
+ MLND: Capstone
+Are you sure this error is because of the same issue? You can reduce the # 45516 to a smaller number that you are sure will pass and see if you still get the same error. If you still get the same error then there is some other bug as well. If you don’t get any error/same error then increase the saf…
+2 days
+Index out of bound error
+ MLND: Capstone
+A cleaner solution would be to use min of two numbers as the second argument in the range function. Can you figure out how to do it?
+2 days
+Tech Support - Quiz Doesn't Load
+ General
+closed 2 days ago
+2 days
+Issue loading quizzes on Udacity website!
+ General
+I will bubble your problem to Udacity through slack. However, it is night time in the US currently. So it will be at least a few hours before this gets fixed. @earvin, I am closing your other post, since you are already on this post. EDIT: Looks like it’s a pretty big outage. A few NDs are affecte…
+2 days
+Tech Support - Quiz Doesn't Load
+ General
+I will put it on slack.
+2 days
+Finding Donors Project - error with visuals.py
+ Project: Finding Donors for CharityML
+Can you show me your code for Question 1 in the notebook Question 1 - Naive Predictor Performace ?
+2 days
+Finding Donors Project - error with visuals.py
+ Project: Finding Donors for CharityML
+You have to use Python 2.7 for all the projects expect the Deep Learning project.
+2 days
+Finding Donors Project - error with visuals.py
+ Project: Finding Donors for CharityML
+Can you make sure you are using Python 2.7? Also please share you train_predict code.
+2 days
+Index out of bound error
+ MLND: Capstone
+Yes. That is correct. So you have to make sure you do not go past the maximum number of rows in any case. You should think how you can do that.
